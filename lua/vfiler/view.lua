@@ -162,11 +162,16 @@ function View:draw(context)
     if options.show_hidden_files or not hidden then
       table.insert(self._items, item)
     end
-    if options.show_linenumber ~= vim.bo.number then
-      vim.bo.number = options.show_linenumber
-    end
   end
-
+  
+  ------------------------------------------------
+  -- for toggle_show_linenumber action
+  ------------------------------------------------
+  if self._winoptions['number'] ~= options.show_linenumber then
+    self._winoptions['number'] = options.show_linenumber
+    self:_clear_cache()
+  end
+  
   self:redraw()
 end
 
