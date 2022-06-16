@@ -24,7 +24,7 @@ function M.change_sort(vfiler, context, view)
   api.start_extension(vfiler, context, view, menu)
 end
 
-function M.toggle_linenumber(vfiler, context, view)
+function M.toggle_show_linenumber(vfiler, context, view)
   local options = context.options
   options.show_linenumber = not options.show_linenumber
   view:draw(context)
