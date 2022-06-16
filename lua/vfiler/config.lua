@@ -71,6 +71,7 @@ M.configs = {
     ['k'] = action.loop_cursor_up,
     ['l'] = action.open_tree,
     ['mm'] = action.move_to_filer,
+    ['n'] = toggle_show_linenumber,
     ['p'] = action.toggle_preview,
     ['q'] = action.quit,
     ['r'] = action.rename,
