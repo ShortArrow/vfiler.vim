@@ -60,7 +60,7 @@ M.configs = {
     end,
     ['<Tab>'] = action.switch_to_filer,
     ['~'] = action.jump_to_home,
-    ['#'] = action.toggle_show_linenumber,
+    ['i'] = action.toggle_show_linenumber,
     ['*'] = action.toggle_select_all,
     ['\\'] = action.jump_to_root,
     ['cc'] = action.copy_to_filer,
