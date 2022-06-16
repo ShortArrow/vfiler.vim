@@ -159,6 +159,7 @@ DEFAULT CONFIGURATIONS                         *vfiler-default-configurations*
         name = '',
         session = 'buffer',
         show_hidden_files = false,
+        show_linenumber = false,
         sort = 'name',
         layout = 'none',
         width = 90,
@@ -456,6 +457,18 @@ show_hidden_files                      If enabled, Make hidden files visible by
 - Type: `boolean`
 - Default: `false`
 - Command option format: `-show-hidden-files`
+
+
+                                                    *vfiler-show_linenumber*
+
+show_linenumber                        If enabled, Make linenumber visible by
+                                       default.
+
+
+
+- Type: `boolean`
+- Default: `false`
+- Command option format: `-show-linenumber`
 
 
                                                                *vfiler-layout*
