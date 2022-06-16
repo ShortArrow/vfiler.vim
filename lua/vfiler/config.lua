@@ -18,6 +18,7 @@ M.configs = {
     name = '',
     session = 'buffer',
     show_hidden_files = false,
+    show_linenumber = false,
     sort = 'name',
     layout = 'none',
     width = 90,
