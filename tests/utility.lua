@@ -142,6 +142,7 @@ function M.vfiler.generate_options()
     name = { values = { '', 'f-o-o', 'b-a-r' } },
     session = { values = { 'none', 'buffer', 'share' } },
     show_hidden_files = 'boolean',
+    show_linenumber = 'boolean',
     sort = { values = { 'name', 'extension', 'time', 'size' } },
     layout = {
       values = { 'none', 'right', 'left', 'top', 'bottom', 'tab' },
