@@ -129,6 +129,7 @@ require'vfiler/config'.setup {
     name = '',
     session = 'buffer',
     show_hidden_files = false,
+    show_linenumber = false,
     sort = 'name',
     layout = 'none',
     width = 90,
@@ -342,6 +343,13 @@ If enabled, Make hidden files visible by default.
 - Type: `boolean`
 - Default: `false`
 - Command option format: `-show-hidden-files`
+
+#### show_linenumber
+If enabled, Make linenumber visible by default.
+
+- Type: `boolean`
+- Default: `false`
+- Command option format: `-show-linenumber`
 
 #### layout
 Specify the layout of the window.
