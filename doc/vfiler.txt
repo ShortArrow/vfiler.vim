@@ -212,6 +212,7 @@ DEFAULT CONFIGURATIONS                         *vfiler-default-configurations*
         ['k'] = action.loop_cursor_up,
         ['l'] = action.open_tree,
         ['mm'] = action.move_to_filer,
+        ['n'] = action.toggle_show_linenumber,
         ['p'] = action.toggle_preview,
         ['q'] = action.quit,
         ['r'] = action.rename,
@@ -898,6 +899,11 @@ ACTION TO VIEW ~
                                                    *vfiler-toggle_show_hidden*
 
 toggle_show_hidden                     Toggles visible hidden files.
+
+
+                                                    *vfiler-toggle_show_linenumber*
+
+toggle_show_linenumber                 Toggles visible linenumber.
 
 
                                                           *vfiler-toggle_sort*
