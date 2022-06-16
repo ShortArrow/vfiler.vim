@@ -30,6 +30,24 @@ describe('view actions', function()
     vfiler:quit(true)
   end)
 
+  describe('Show linenumber', function()
+    local options = u.vfiler.generate_options()
+    options.show_linenumber = false
+    local vfiler, _, view = u.vfiler.start(options)
+    local target = '.gitignore' -- TODO fix target
+
+    it(u.vfiler.desc('show_linenum: ON', vfiler), function()
+      vfiler:do_action(a.show_linenumber)
+      assert.is_true(find(view, target))
+    end)
+    it(u.vfiler.desc('show_linenum: OFF', vfiler), function()
+      vfiler:do_action(a.show_linenumber)
+      assert.is_false(find(view, target))
+    end)
+
+    vfiler:quit(true)
+  end)
+
   describe('Sort', function()
     local options = u.vfiler.generate_options()
     options.sort = 'name'
