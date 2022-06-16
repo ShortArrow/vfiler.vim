@@ -182,6 +182,7 @@ require'vfiler/config'.setup {
     ['k'] = action.loop_cursor_up,
     ['l'] = action.open_tree,
     ['mm'] = action.move_to_filer,
+    ['n'] = action.toggle_show_linenumber,
     ['p'] = action.toggle_preview,
     ['q'] = action.quit,
     ['r'] = action.rename,
@@ -648,6 +649,9 @@ Toggle the preview window for the item in the current cursor.
 
 #### toggle_show_hidden
 Toggles visible hidden files.
+
+### toggle_show_linenumber
+Toggles visible linenumber.
 
 #### toggle_sort
 Toggle the ascending/descending order of the current sort method.
