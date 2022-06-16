@@ -37,11 +37,11 @@ describe('view actions', function()
     local target = '.gitignore' -- TODO fix target
 
     it(u.vfiler.desc('show_linenum: ON', vfiler), function()
-      vfiler:do_action(a.show_linenumber)
+      vfiler:do_action(a.toggle_show_linenumber)
       assert.is_true(find(view, target))
     end)
     it(u.vfiler.desc('show_linenum: OFF', vfiler), function()
-      vfiler:do_action(a.show_linenumber)
+      vfiler:do_action(a.toggle_show_linenumber)
       assert.is_false(find(view, target))
     end)
 
