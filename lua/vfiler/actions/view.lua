@@ -24,6 +24,12 @@ function M.change_sort(vfiler, context, view)
   api.start_extension(vfiler, context, view, menu)
 end
 
+function M.toggle_linenumber(vfiler, context, view)
+  local options = context.options
+  options.show_linenumber = not options.show_linenumber
+  view:draw(context)
+end
+
 function M.toggle_show_hidden(vfiler, context, view)
   local options = context.options
   options.show_hidden_files = not options.show_hidden_files
